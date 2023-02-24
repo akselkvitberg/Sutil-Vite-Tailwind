@@ -4,7 +4,7 @@ open Saturn
 open Shared
 
 let getAdjective () =
-  let adjectives = [ "cool" ; "fun" ; "fresh" ; "hip" ]
+  let adjectives = [ "cool" ; "fun" ; "fresh" ; "hip"; "wicked"; "awesome"; "random"; "good"; "nice" ]
   adjectives[(System.Random().Next adjectives.Length)]
 
 let adjectivesApi : IAdjectivesApi = {
