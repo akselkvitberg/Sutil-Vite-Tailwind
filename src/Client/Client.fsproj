@@ -8,6 +8,15 @@
     <Compile Include="App.fs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="index.html" Link="Vite/index.html"/>
+    <None Include="index.css" Link="Vite/%(Filename)%(Extension)"/>
+    <None Include="package.json" Link="Vite/%(Filename)%(Extension)"/>
+    <None Include="postcss.config.js" Link="Vite/%(Filename)%(Extension)"/>
+    <None Include="tailwind.config.js" Link="Vite/%(Filename)%(Extension)"/>
+    <None Include="vite.config.ts" Link="Vite/%(Filename)%(Extension)"/>
+    <None Include="public/fable.ico" Link="Vite/Public/%(Filename)%(Extension)"/>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Fable.Remoting.Client" Version="7.25.0" />
     <PackageReference Include="Sutil" Version="2.0.0" />
   </ItemGroup>
